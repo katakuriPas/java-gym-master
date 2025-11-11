@@ -17,6 +17,18 @@ public class Coach {
         this.middleName = middleName;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -28,17 +40,5 @@ public class Coach {
     @Override
     public int hashCode() {
         return Objects.hash(surname, name, middleName);
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getMiddleName() {
-        return middleName;
     }
 }
